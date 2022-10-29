@@ -10,5 +10,7 @@ name = "backup"
 [dependencies]
 hdk = { workspace = true }
 serde = { workspace = true }
+bip0039 = "0.10.1"
+magic-crypt = "3.1.12"
 
 backup_integrity = { workspace = true } 
