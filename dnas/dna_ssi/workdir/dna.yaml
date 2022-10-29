@@ -1,0 +1,19 @@
+---
+manifest_version: "1"
+name: dna_ssi
+integrity:
+  network_seed: ~
+  properties: ~
+  origin_time: 1667046274613602
+  zomes:
+    - name: backup_integrity
+      hash: ~
+      bundled: "../../../target/wasm32-unknown-unknown/release/backup_integrity.wasm"
+      dependencies: ~
+coordinator:
+  zomes:
+    - name: backup
+      hash: ~
+      bundled: "../../../target/wasm32-unknown-unknown/release/backup.wasm"
+      dependencies:
+        - name: backup_integrity

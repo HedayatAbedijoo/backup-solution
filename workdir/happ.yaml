@@ -1,0 +1,17 @@
+---
+manifest_version: "1"
+name: backup-solution
+description: ~
+roles:
+  - id: dna_ssi
+    provisioning:
+      strategy: create
+      deferred: false
+    dna:
+      bundled: "../dnas/dna_ssi/workdir/dna_ssi.dna"
+      modifiers:
+        network_seed: ~
+        properties: ~
+        origin_time: ~
+      version: ~
+      clone_limit: 0
