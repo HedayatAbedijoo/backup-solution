@@ -50,9 +50,7 @@ test("create credential", async (t) => {
       fn_name: "mnemonic",
     });
 
-    console.log("------------------------");
-    console.log(someting);
-    assert.ok(someting);
+    assert.deepEqual(someting, 1);
   });
 });
 /*

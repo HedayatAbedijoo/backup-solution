@@ -79,6 +79,7 @@ dependencies = [
  "hdk",
  "magic-crypt",
  "serde",
+ "sha2 0.10.6",
 ]
 
 [[package]]

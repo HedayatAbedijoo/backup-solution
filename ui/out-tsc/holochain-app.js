@@ -1,9 +1,10 @@
 import { __decorate } from "tslib";
 import { LitElement, css, html } from 'lit';
 import { customElement, property, state } from 'lit/decorators.js';
-import { AppWebsocket, } from '@holochain/client';
+import { AppWebsocket } from '@holochain/client';
 import { contextProvider } from '@lit-labs/context';
 import '@material/mwc-circular-progress';
+import './dna_ssi/backup/create-credential';
 import { appWebsocketContext, appInfoContext } from './contexts';
 let HolochainApp = class HolochainApp extends LitElement {
     constructor() {
@@ -24,9 +25,9 @@ let HolochainApp = class HolochainApp extends LitElement {
       `;
         return html `
       <main>
-        <h1>my-app</h1>
-
+        <h1>Backup Credential</h1>
         <div id="content"></div>
+        <create-credential></create-credential>
       </main>
     `;
     }
